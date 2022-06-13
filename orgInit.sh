@@ -6,6 +6,13 @@ sfdx force:org:create -s -f config/project-scratch-def.json -d 14 -s -w 60
 #install OmniStudio - 238
 sfdx force:package:install -p 04t4W000002ke26QAA -w 45 -r 
 
+sfdx force:package:install --package=04t1E000000jb9R --wait 15
+sfdx force:package:install --package=04t1E000001Iql5 --wait 2
+sfdx force:package:install --package=04t4W000002ke26QAA --wait 15
+sfdx shane:user:password:set -p salesforce1 -g User -l User
+sfdx force:user:permset:assign -n FinancialServicesCloudStandard
+sfdx force:user:permset:assign -n FinancialServicesCloudExtension
+
 #push the utility metadata service class
 sfdx force:source:deploy -m ApexClass:MetadataService
 
