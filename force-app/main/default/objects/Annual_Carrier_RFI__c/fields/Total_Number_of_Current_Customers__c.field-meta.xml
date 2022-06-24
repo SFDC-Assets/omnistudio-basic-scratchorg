@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Number_of_Current_Customers__c</fullName>
+    <description>How many clients do you currently have in your block of business?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many clients do you currently have in your block of business?</inlineHelpText>
+    <label>Total Number of Current Customers</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

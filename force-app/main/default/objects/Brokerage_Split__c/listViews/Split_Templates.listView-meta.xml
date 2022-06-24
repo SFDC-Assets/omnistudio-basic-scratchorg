@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Split_Templates</fullName>
+    <columns>NAME</columns>
+    <columns>New_Business_Split__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>*</value>
+    </filters>
+    <label>Split Templates</label>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brokerage_Split__c</fullName>
+    <externalId>false</externalId>
+    <label>Brokerage Split</label>
+    <referenceTo>Brokerage_Split__c</referenceTo>
+    <relationshipLabel>Split Payees</relationshipLabel>
+    <relationshipName>Split_Payees</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Renew_Client_Signature__c</fullName>
+    <description>Formal Disclosure: Will you agree to no client signature required at new or renewal?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Formal Disclosure: Will you agree to no client signature required at new or renewal?</inlineHelpText>
+    <label>New/Renew Client Signature</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Not Required</fullName>
+                <default>false</default>
+                <label>Not Required</label>
+            </value>
+            <value>
+                <fullName>Required</fullName>
+                <default>false</default>
+                <label>Required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
