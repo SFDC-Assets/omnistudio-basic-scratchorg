@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
 #create scratch org
-sfdx force:org:create -s -f config/project-scratch-def.json -d 14 -s -w 60
+sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix omni -o studio.demo
 
 #install OmniStudio - 238
-sfdx force:package:install -p 04t4W000002ke26QAA -w 45 -r 
+sfdx force:package:install --package=04t4W000002kepJ --wait 15 -r
 
 sfdx force:package:install --package=04t1E000000jb9R --wait 15
 sfdx force:package:install --package=04t1E000001Iql5 --wait 2
-sfdx force:package:install --package=04t4W000002ke26QAA --wait 15
 sfdx shane:user:password:set -p salesforce1 -g User -l User
 sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 sfdx force:user:permset:assign -n FinancialServicesCloudExtension
@@ -23,7 +22,7 @@ sfdx force:apex:execute -f dparemoteSites.cls
 node run.js
 
 #Sample metadata examples into the org - basic hello world.
-sfdx force:source:deploy -m OmniUiCard,OmniScript,OmniIntegrationProcedure,OmniDataTransform
+sfdx force:source:deploy -p -force-app
 
 #open says me.
 sfdx force:org:open
